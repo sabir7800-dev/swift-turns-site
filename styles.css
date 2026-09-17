@@ -424,6 +424,14 @@ a {
   bottom: 88px;
 }
 
+.tag-three {
+  right: 4px;
+  bottom: 36px;
+  background: linear-gradient(135deg, rgba(61, 122, 99, 0.92), rgba(61, 122, 99, 0.78));
+  color: #f8f4ef;
+  border-color: rgba(61, 122, 99, 0.4);
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -544,7 +552,7 @@ a {
 
 .trust-strip {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 20px;
   background: linear-gradient(180deg, rgba(61, 122, 99, 0.08), rgba(181, 139, 72, 0.05));
   border: 1px solid rgba(61, 122, 99, 0.2);
