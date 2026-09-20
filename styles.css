@@ -94,12 +94,17 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  padding: 8px 14px 8px 8px;
+  padding: 10px 16px;
   background: rgba(255, 255, 255, 0.26);
   border: 1px solid rgba(29, 40, 42, 0.08);
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(17, 22, 25, 0.04);
+}
+
+.brand-logo {
+  height: 46px;
+  width: auto;
+  display: block;
 }
 
 .brand-mark {
