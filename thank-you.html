@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Received | Swift Turnover Ltd</title>
+    <meta name="description" content="Your turnover cleaning request has been received. We'll be in touch same-day." />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  </head>
+  <body>
+    <header class="topbar wrapper">
+      <a class="brand" aria-label="Swift Turnover Ltd home" href="/">
+        <img src="logo.png" alt="" class="brand-icon" />
+        <div class="brand-copy">
+          <strong>Swift Turnover Ltd</strong>
+          <span>Property care & cleaning</span>
+        </div>
+      </a>
+    </header>
+
+    <main>
+      <section class="section wrapper">
+        <div class="confirm-panel reveal visible">
+          <div class="confirm-icon">✓</div>
+          <p class="eyebrow">Booking received</p>
+          <h1>Thanks — we've got your request.</h1>
+          <p class="lede">
+            Your turnover cleaning request has come through successfully. We'll review your
+            details and come back to you the same day to confirm your booking.
+          </p>
+
+          <div class="confirm-trust">
+            <span>DBS-checked</span>
+            <span>Fully insured</span>
+            <span>Pay only before your visit</span>
+          </div>
+
+          <div class="cta-row">
+            <a class="button button-primary" href="https://wa.me/447498906097" target="_blank" rel="noopener">💬 Message us on WhatsApp</a>
+            <a class="button button-secondary" href="/">Back to homepage</a>
+          </div>
+
+          <p class="confirm-note">
+            Need to reach us sooner? Call <a href="tel:03330540769">0333 054 0769</a> or email
+            <a href="mailto:swiftturnoverltd@gmail.com">swiftturnoverltd@gmail.com</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer wrapper">
+      <p>© <span id="year"></span> Swift Turnover Ltd. All rights reserved.</p>
+      <div>
+        <a href="/#services">Services</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

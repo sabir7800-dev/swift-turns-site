@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://swiftturnoverltd.co.uk/sitemap.xml
