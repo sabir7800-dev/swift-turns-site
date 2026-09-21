@@ -396,15 +396,16 @@
             <p class="contact-trust">DBS-checked · Fully insured · Pay only before your visit</p>
 
             <!--
-              Quote form submits via FormSubmit.co (no backend/account needed) straight to swiftturnoverltd@gmail.com.
-              The first real submission triggers a one-time confirmation email from FormSubmit to activate this address.
-              Swap the form action email if you'd rather receive these somewhere else, or switch to Formspree/Netlify Forms
-              once you know which host the live site will run on.
+              Quote form uses Netlify's built-in form handling (native to this host, no external
+              service, no activation step). Submissions appear under the project's "Forms" tab in
+              Netlify, and can be set to auto-forward to swiftturnoverltd@gmail.com via
+              Forms -> Settings & usage -> Form notifications -> Add notification -> Email notification.
             -->
-            <form class="quote-form" action="https://formsubmit.co/swiftturnoverltd@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="New turnover cleaning enquiry" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <form class="quote-form" name="quote-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="quote-form" />
+              <p style="display:none">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              </p>
 
               <div class="form-row">
                 <label>
