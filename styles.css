@@ -94,15 +94,16 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  padding: 10px 16px;
+  gap: 12px;
+  padding: 8px 16px 8px 10px;
   background: rgba(255, 255, 255, 0.26);
   border: 1px solid rgba(29, 40, 42, 0.08);
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(17, 22, 25, 0.04);
 }
 
-.brand-logo {
-  height: 46px;
+.brand-icon {
+  height: 44px;
   width: auto;
   display: block;
 }
